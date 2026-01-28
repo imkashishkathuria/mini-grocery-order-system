@@ -19,8 +19,8 @@ const decreaseStock = (id, qty, session) => {
     );
 };
 
-module.exports = {
-    getAllProducts,
-    getProductById,
-    decreaseStock
-}
+export default {
+  getAllProducts,
+  getProductById,
+  decreaseStock
+};
