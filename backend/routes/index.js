@@ -2,10 +2,11 @@ import express from 'express'
 
 const router = express.Router();
 
-import productController from '../controllers/product.controller'
-import orderController from '../controllers/order.controller'
 
-router.get("/products", productController.getProducts);
-router.post("/orders", orderController.placeOrder);
+import getProducts from '../controllers/product.controller.js';
+import placeOrder from '../controllers/order.controller.js';
+
+router.get("/products", getProducts);
+router.post("/orders", placeOrder);
 
 export default router

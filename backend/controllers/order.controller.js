@@ -1,12 +1,12 @@
-import service from '../services/order.service'
+import placeOrder from '../services/order.service.js'
 
-const placeOrder = async (req, res) => {
+const placeOrderController = async (req, res) => {
     try {
-        const result = await service.placeOrder(req.body);
+        const result = await placeOrder(req.body);
         res.json(result);
     } catch (error) {
         res.status(400).json( { error: error.message });
     }
 }
 
-export default placeOrder
+export default placeOrderController

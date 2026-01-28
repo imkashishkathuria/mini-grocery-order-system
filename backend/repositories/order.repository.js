@@ -1,8 +1,11 @@
-import Order from "../models/Order"
+import Order from "../models/Order.js"
 
 
 const createOrder = (data, session) => {
     return Order.create([data], {session});
 };
 
-export default createOrder
+export default 
+    {
+    createOrder
+    };

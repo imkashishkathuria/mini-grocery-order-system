@@ -1,4 +1,4 @@
-import getAllProducts from '../repositories/product.repository'
+import getAllProducts from '../repositories/product.repository.js'
 
 
 const getProducts = () => {

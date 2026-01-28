@@ -1,8 +1,8 @@
-import service from '../services/product.service'
+import getProducts from '../services/product.service.js'
 
-const getProducts = async (req, res) => {
-    const products = await service.getProducts();
+const getProductsControllers = async (req, res) => {
+    const products = await getProducts();
     res.json(products);
 }
 
-export default getProducts
+export default getProductsControllers
